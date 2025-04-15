@@ -1,6 +1,4 @@
 
-## Running PCA is easier in R for me. So, I just used this portion to run in R.
-
 ## Load libraries
 library(psych)
 library(dplyr)
@@ -24,7 +22,12 @@ data.frame(Column_Number = seq_along(colnames(data)), Column_Name = colnames(dat
 pca1 <- principal(data[c(33:62)], nfactors = 1, cor = "cor")
 pca1$values
 
-## Since 7 PC values have eigenvalues more than 1, so 7 is chosen in nfactors
+## Using PCA we can specify how many components we want to keep after the analysis.
+## But how do we know how many to keep? There is a way to retain only components that have eigenvalues of at least 1. 
+## Eigenvalues represent magnitudes of how much variance each component captures in the input data. 
+## Thus, larger eigenvalues indicate components that we might want to retain. 
+## The rule to use a threshold of ≥1 for eigenvalues to keep is known as the Kaiser Rule or Kaiser Criterion. 
+## Since there are 7 components that have eigenvalue more than 1, I will retain 7 components for this analysis.
 pca7 <- principal(data[c(33:62)], nfactors = 7, cor = "cor")
 print(pca7)
 
