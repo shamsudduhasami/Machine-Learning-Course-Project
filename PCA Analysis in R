@@ -1,4 +1,6 @@
 
+## Running PCA is easier in R for me. So, I just used this portion to run in R.
+
 ## Load libraries
 library(psych)
 library(dplyr)
