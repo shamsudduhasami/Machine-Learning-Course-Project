@@ -2,8 +2,6 @@
 ## Load libraries
 library(psych)
 library(dplyr)
-library(reshape2)
-library(viridis)
 
 # Define the URL for the processed data file on GitHub.
 url <- "https://raw.githubusercontent.com/shamsudduhasami/Machine-Learning-Course-Project/main/Project_Processed_Data.csv"
