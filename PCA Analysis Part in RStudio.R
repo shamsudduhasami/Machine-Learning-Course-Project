@@ -35,4 +35,4 @@ print(pca7)
 PCA7_Scores <- bind_cols(data, pca7$scores, id = NULL)
 
 # Save the merged dataset
-write.csv(PCA7_Scores, "C:/Users/Sami Shamsudduha/OneDrive - University of Florida/PhD Courseworks/Spring 2025/GLY6932 Machine Learning in Geoscience/Project/Project_PCA_Analysis_Data.csv")
+write.csv(PCA7_Scores, "C:/Users/Sami Shamsudduha/OneDrive - University of Florida/PhD Courseworks/Spring 2025/GLY6932 Machine Learning in Geoscience/Project/3_Project_PCA_Analysis_Data.csv")
