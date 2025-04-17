@@ -18,6 +18,9 @@ After that I loaded the 3_Project_PCA_Analysis_Data.csv in the following colab c
 
 I extracted components to interpret the underlying dimensions of social vulnerability. Variables loading strongly (absolute value > 0.60) on a component guided its labeling (for example, a “Wealth & Economic Status” factor for 5 variables in the table).
 
+![PCA Result](https://github.com/user-attachments/assets/3a4e7c4d-2351-44aa-ba5b-2fdcf3b9e4f8)
+
+
 ![PCA Table](https://github.com/user-attachments/assets/184404b8-4495-4697-ac90-dc71afbc0597)
 
 
