@@ -27,6 +27,8 @@ Finally, I aggregated the component scores in a simple additive model, summing e
 
 ![SoVI Map](https://github.com/user-attachments/assets/406428f0-665b-4761-999e-1f5705eb3470)
 
+**Cluster Analysis for Texas**
+
 After calculating the Social Vulnerability Index (SoVI) scores for all counties, I conducted spatial autocorrelation analyses in ArcGIS Pro to examine clustering patterns in Texas. This two-step approach involved an Incremental Spatial Autocorrelation (ISA) using Global Moran’s I, followed by a Local Moran’s I (Anselin) cluster and outlier analysis at the optimal distance. Applying these spatial analyses to the SoVI results is important for determining whether high or low vulnerability counties tend to cluster together beyond random chance. Identifying significant clusters of social vulnerability can highlight areas that may require targeted policy attention or resources, and Texas was selected for focused analysis because prior studies have indicated the presence of pronounced vulnerability clusters in this state​. Texas’s large size and socio-demographic diversity, as well as its frequent exposure to natural hazards, make it an ideal case for investigating spatial patterns of social vulnerability.
 
 **Incremental Spatial Autocorrelation (Global Moran’s I)**
