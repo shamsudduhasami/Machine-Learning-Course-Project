@@ -3,6 +3,7 @@ The documents, code, figures, etc. uploaded here is produced for the course proj
 
 
 **Developing a County Level Social Vulnerability Index (SoVI) for the Contiguous United States**
+
 To develop the Social Vulnerability Index (SoVI), I downloaded a broad set of demographic and socioeconomic variables from the U.S. Census Bureau (https://data.census.gov/). Then these variables are normalized as either percentage, per capita values, or density functions. I standardized every variable to a z‐score (mean = 0, standard deviation = 1) (Eq. below). This ensures that variables measured on different scales contribute equally to the downstream analysis. 
 z=  (x- μ)/σ
 These dataprocessing is done in the google colab. The code is provided in this repository (https://github.com/shamsudduhasami/Machine-Learning-Course-Project/blob/main/Project_Machine_Learning_Course.ipynb). Then I saved the processed data also uploded in the repository (https://github.com/shamsudduhasami/Machine-Learning-Course-Project/blob/main/2_Project_Processed_Data.csv) for the use of PCA in RStudio.
