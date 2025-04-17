@@ -27,3 +27,12 @@ Finally, I aggregated the component scores in a simple additive model, summing e
 
 ![SoVI Map](https://github.com/user-attachments/assets/406428f0-665b-4761-999e-1f5705eb3470)
 
+After calculating the Social Vulnerability Index (SoVI) scores for all counties, I conducted spatial autocorrelation analyses in ArcGIS Pro to examine clustering patterns in Texas. This two-step approach involved an Incremental Spatial Autocorrelation (ISA) using Global Moran’s I, followed by a Local Moran’s I (Anselin) cluster and outlier analysis at the optimal distance. Applying these spatial analyses to the SoVI results is important for determining whether high or low vulnerability counties tend to cluster together beyond random chance. Identifying significant clusters of social vulnerability can highlight areas that may require targeted policy attention or resources, and Texas was selected for focused analysis because prior studies have indicated the presence of pronounced vulnerability clusters in this state​. Texas’s large size and socio-demographic diversity, as well as its frequent exposure to natural hazards, make it an ideal case for investigating spatial patterns of social vulnerability.
+
+**Incremental Spatial Autocorrelation (Global Moran’s I)**
+
+To determine the scale at which SoVI values exhibit the strongest spatial clustering, I performed an incremental spatial autocorrelation analysis using Global Moran’s I. This tool evaluates spatial autocorrelation (clustering or dispersion) over a range of distances. I specified a fixed number of 30 distance bands, starting at 150,000 meters and increasing in 10,000-meter increments (Euclidean distance with row-standardized weights). At each distance band, Moran’s I and its corresponding z-score were computed to measure the intensity of spatial clustering of county SoVI values. In line with theoretical expectations, the Global Moran’s I z-scores increased with distance initially, indicating intensification of spatial clustering, and then reached a distinct peak before declining. The figure below illustrates the resulting z-scores as a function of distance.
+
+![Spatial_Autocorrelation using Increment](https://github.com/user-attachments/assets/ae44cab4-e6cb-4203-a0a5-5f6d813329f5)
+
+The analysis identified a clear maximum z-score at the 300,000-meter distance band, where the z-score reaches approximately 17.3 (p < 0.0001), after which the z-scores plateau or decrease slightly.
