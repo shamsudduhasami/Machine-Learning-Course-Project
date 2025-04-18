@@ -12,6 +12,9 @@ These dataprocessing is done in the google colab. The code is provided in this r
 
 I performed a principal components analysis (PCA) in RStudio (code link https://github.com/shamsudduhasami/Machine-Learning-Course-Project/blob/main/PCA%20Analysis%20Part%20in%20RStudio.R) on these standardized variables from the 2_Project_Processed_Data.csv dataset, using a varimax rotation to sharpen the definition of each component and applying the Kaiser criterion (eigenvalues > 1) to determine the appropriate number of factors. Then I saved the PCA analysis result uploaded in this repository (https://github.com/shamsudduhasami/Machine-Learning-Course-Project/blob/main/3_Project_PCA_Analysis_Data.csv).
 
+![Rplot](https://github.com/user-attachments/assets/1642866b-5563-41d5-948c-3d5a8831ba16)
+
+
 After that I loaded the 3_Project_PCA_Analysis_Data.csv in the following colab code. Then I examined the factor loadings by looking at the correlations between each input variable (https://github.com/shamsudduhasami/Machine-Learning-Course-Project/blob/main/Heatmap%20of%20PCA%20Loadings.png).
 
 ![Heatmap of PCA Loadings](https://github.com/user-attachments/assets/6caf1b80-4d8c-445c-8719-e474d928e9e2)
